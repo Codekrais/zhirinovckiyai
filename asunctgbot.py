@@ -20,7 +20,7 @@ async def premes(message):
 @bot.message_handler(commands=['ask'])
 async def ren(message):
     try:
-        nc = message.text.replace("/ask", "").strip().replace('@aizhirinovskiy_bot', '').strip()
+        nc = message.text.replace("/ask", "").strip().replace('', '').strip()
 
         if nc:
             # Отправляем сообщение о загрузке
@@ -54,7 +54,7 @@ async def handle_photo(message):
 async def ren(message):
     try:
 
-        nc = message.text.replace("/prompt", "").strip().replace('@aizhirinovskiy_bot', '').strip()
+        nc = message.text.replace("/prompt", "").strip().replace('', '').strip()
         if nc:
             change_prompt(message.chat.id, nc)
             await bot.send_message(message.chat.id, "Промпт для вашего чата успешно изменён")
