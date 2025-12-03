@@ -1,0 +1,4 @@
+pyTelegramBotAPI==4.29.1
+aiohttp==3.13.2
+openai==2.8.1
+dotenv
